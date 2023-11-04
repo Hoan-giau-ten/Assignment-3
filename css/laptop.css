@@ -1,0 +1,349 @@
+/* Global */
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #727272;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.bg-grey {
+  background-color: #f7f7f7;
+}
+
+.ic-color {
+  color: #199cdb;
+}
+
+/* Banner Section */
+#banner {
+  position: relative;
+  height: 680px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/banner.jpg");
+  background-size: cover;
+
+}
+
+.banner-text {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%);
+}
+
+.banner-text h1 {
+  color: #f7f7f7;
+  font-size: 44px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.banner-text span {
+  color: #f2f2f281;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+/* Navbar Section */
+#nav-bar {
+  position: relative;
+}
+
+#nav-bar .nav-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0 50px;
+  text-align: center;
+}
+
+/* ...make avatar circular and put it center of navbar */
+#nav-bar img {
+  height: 180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 6px solid #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+#nav-bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #727277;
+  padding: 20px 0;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+#nav-bar a:hover {
+  color: #fff;
+  background-color: #ddd;
+}
+
+/* About Section */
+/* #about .about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+#target {
+  background-color: #f5f5f5;
+  padding: 80px;
+}
+
+#personal-info {
+  background-color: #f0f0f0;
+  padding: 80px;
+}
+
+#personal-info ul {
+  padding: 0;
+}
+
+#personal-info li {
+  list-style-type: none;
+}
+
+#personal-info span {
+  font-weight: bold;
+}
+
+#personal-info a:link,
+#personal-info a:visited {
+  color: #199cdb;
+}
+
+.section-title,
+.info {
+  padding: 30px 0;
+}
+
+/* Job-info Section */
+/* #job-info .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+#job-info .job-item {
+  height: 100%;
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+#job-info .job-detail {
+  margin: 50px 20px 50px 40px;
+}
+
+.job-item .header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.job-item h3 {
+  flex: 75%;
+  margin-left: 20px;
+}
+
+.job-item .ic-big {
+  flex: 25%;
+  font-size: 50px;
+}
+
+.job-item .bold-text {
+  font-weight: bold;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.job-item .bold-text::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #199cdb;
+  position: absolute;
+  left: -25px;
+  top: 3px;
+}
+
+.job-item .italic-text {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.job-item .special-text {
+  color: #fff;
+  padding: 2px 5px;
+  background-color: #199cdb;
+  border-radius: 5px;
+}
+
+/* ...make icon circle  */
+.job-item .ic-circle {
+  border: 2px solid #199cdb;
+  width: 50px;
+  line-height: 46px !important;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.job-item .hobit {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+
+.job-item .hobit div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-item .level {
+  display: inline-block;
+  width: 64px;
+  height: 5px;
+  background-color: #f0f0f0;    border-radius: 12px;
+  margin-right: 10px;
+}
+
+.job-item .level-up {
+  background-color: rgb(33, 184, 249);    border-radius: 2px;
+}
+
+/* Certificate Section */
+#certificate {
+  margin-top: 30px;
+}
+
+.cer-item {
+  display: flex;
+  padding: 40px 12px;
+}
+
+.cer-item img {
+  height: 100px;
+  display: block; /* remove white-space img tag */
+}
+
+.cer-item p {
+  font-size: 12px;
+}
+
+/* ...create gold border */
+.cer-item:nth-child(1),
+.cer-item:nth-child(2) {
+  border-bottom: 1px solid #d6c08d;
+}
+
+.cer-item:nth-child(2) div:nth-child(1) {
+  border-left: 1px solid #d6c08d;
+}
+
+/* Project Section */
+#project img {
+  width: 100%;
+}
+
+.pro-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.pro-label,
+.pro-detail,
+.pro-task,
+.pro-tech {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  font-size: 14px;
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.pro-label {
+  text-align: center;
+  padding-left: 0px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.pro-year {
+  justify-self: center;
+  font-size: 12px;
+  padding: 4px 18px;
+  color: #fff;
+  background-color: #199cdb;
+  border-radius: 15px;
+}
+
+.funix-dvl {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ...style link to project detail pages */
+.pro-item a {
+  text-decoration: none;
+  color: #727272;
+}
+
+.pro-item a:hover {
+  color: #199cdb;
+  font-style: italic;
+}
+
+/* Footer Section */
+#footer .container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  margin-top: 30px;
+}
+
+#footer a:link,
+#footer a:visited {
+  color: #aaa;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+#footer a {
+  display: flex;
+  align-items: center;
+}
+
+.ic-footer {
+  font-size: 24px;
+}
+
+/* Thank you Mentor, for reviewing and evaluating. */

@@ -1,0 +1,91 @@
+/* For mobile screen */
+@media screen and (max-width: 767px) {
+
+    /* Banner section */
+    #banner {
+      height: 500px;
+    }
+    
+    /* Navbar Section */
+    #nav-bar .nav-container {
+      padding: 0;
+      display: grid;
+      grid-template-columns: auto;
+      text-align: left;
+    }
+    #nav-bar img {
+      display: none;
+    }
+  
+    #nav-bar a {
+      border-left: none;
+      border-right: none;
+      padding-left: 70px;
+    }
+  
+    /* About Section */
+    #target,
+    #personal-info {
+      padding: 80px 40px;
+    }
+  
+    /* Job-info Section */
+    .job-item .hobit {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    /* Certificate Section */
+    .cer-item:nth-child(2) div:nth-child(1) {
+      border-left: none;
+    }
+  
+    .cer-item img {
+      margin-left: 0 !important;
+    }
+  
+    .cer-item {
+      flex-direction: column;
+    }
+  
+    .cer-item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .cer-item h5 {
+      margin-top: 20px;
+      width: 250px;
+    }
+  
+    /* Project Section */
+    .pro-label {
+      grid-template-columns: auto;
+      justify-items: left;
+      gap: 10px;
+      padding-left: 24px;
+    }
+  
+    .pro-year {
+      justify-self: left;
+    }
+  
+    .funix-dvl {
+      display: grid;
+      justify-items: left;
+      gap: 10px;
+    }
+  
+    .pro-year {
+      align-self: baseline;
+    }
+  
+    /* Footer Section */
+    #footer span {
+      display: none;
+    }
+    .ic-footer {
+      font-size: 300%;
+    }
+  }
+  

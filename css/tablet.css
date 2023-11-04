@@ -1,0 +1,53 @@
+/* For table screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* Banner section */
+    #banner {
+      height: 500px;    
+    }
+
+    /* Navbar Section */
+    #nav-bar .nav-container {
+      grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr;
+    }
+    
+    #nav-bar img {
+      display: none;
+    }
+  
+    /* Job-info Section */
+    .job-item .hobit {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  
+    /* Certificate Section */
+    .cer-item {
+      flex-direction: column;
+    }
+  
+    .cer-item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .cer-item h5 {
+      margin-top: 20px;
+      width: 250px;
+    }
+  
+    /* Project Section */
+    .funix-dvl {
+      display: grid;
+    }
+  
+    .pro-year {
+      align-self: baseline;
+    }
+  
+    /* Footer Section */
+    .ic-footer {
+      font-size: 200%;
+    }
+  }
+  
